@@ -1,4 +1,4 @@
 package rest.MeteorologicalService.util;
 
-public class MeasurementNotFoundException extends RuntimeException{
+public class MeasurementNotFoundException extends RuntimeException {
 }

@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rest.MeteorologicalService.models.Sensor;
 import rest.MeteorologicalService.repositories.SensorRepository;
-import rest.MeteorologicalService.util.SensorNotFoundException;
 
 import java.util.List;
 import java.util.Optional;
@@ -25,13 +24,11 @@ public class SensorService {
     }
 
     public Sensor findOne(int id) {
-        Optional<Sensor> foundPerson = sensorRepository.findById(id);
-        return foundPerson.orElseThrow(SensorNotFoundException::new);
+        return sensorRepository.findById(id).get();
     }
 
-    public Sensor findOne(String name) {
-        Optional<Sensor> foundSensor = sensorRepository.findByName(name);
-        return foundSensor.orElseThrow(SensorNotFoundException::new);
+    public Optional<Sensor> findOne(String name) {
+        return sensorRepository.findByName(name);
     }
 
     @Transactional

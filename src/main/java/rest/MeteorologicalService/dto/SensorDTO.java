@@ -1,19 +1,12 @@
 package rest.MeteorologicalService.dto;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 public class SensorDTO {
-    @Column(name = "name")
     @NotEmpty(message = "Имя не должно быть пустым")
+    @Size(min = 3, max = 30, message = "Название сенсора должно быть от 3 до 30 символов!")
     private String name;
-
-    public SensorDTO() {
-    }
-
-    public SensorDTO(String name) {
-        this.name = name;
-    }
 
     public String getName() {
         return name;

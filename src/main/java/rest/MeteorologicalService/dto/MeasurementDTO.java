@@ -1,37 +1,20 @@
 package rest.MeteorologicalService.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public class MeasurementDTO {
-    @Column(name = "value")
     @NotNull(message = "Величина температуры не должна быть пустой")
     @Max(value = 100, message = "Значение температуры должно быть не более 100")
     @Min(value = -100, message = "Значение температуры должно быть не менее -100")
     private double value;
 
-    @Column(name = "raining")
     @NotNull(message = "Отметка о дожде не должна быть пустой")
     private boolean raining;
 
-    @ManyToOne
-    @JoinColumn(name = "sensor_name", referencedColumnName = "name")
-    @NotEmpty(message = "Поле 'sensor' не должно быть пустым")
-    private SensorDTO sensorDTO;
-
-    public MeasurementDTO() {
-    }
-
-    public MeasurementDTO(double value, boolean raining, SensorDTO sensorDTO) {
-        this.value = value;
-        this.raining = raining;
-        this.sensorDTO = sensorDTO;
-    }
+    @NotNull(message = "Поле 'sensor' не должно быть пустым")
+    private SensorDTO sensor;
 
     public double getValue() {
         return value;
@@ -49,11 +32,11 @@ public class MeasurementDTO {
         this.raining = raining;
     }
 
-    public SensorDTO getSensorDTO() {
-        return sensorDTO;
+    public SensorDTO getSensor() {
+        return sensor;
     }
 
-    public void setSensorDTO(SensorDTO sensorDTO) {
-        this.sensorDTO = sensorDTO;
+    public void setSensor(SensorDTO sensor) {
+        this.sensor = sensor;
     }
 }

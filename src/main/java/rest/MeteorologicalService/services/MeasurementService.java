@@ -5,11 +5,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rest.MeteorologicalService.models.Measurement;
 import rest.MeteorologicalService.repositories.MeasurementRepository;
-import rest.MeteorologicalService.util.SensorNotFoundException;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
@@ -28,8 +26,7 @@ public class MeasurementService {
     }
 
     public Measurement findOne(String name) {
-        Optional<Measurement> foundMeasurement = measurementRepository.findBySensorName(name);
-        return foundMeasurement.orElseThrow(SensorNotFoundException::new);
+        return measurementRepository.findBySensorName(name).get();
     }
 
     @Transactional
@@ -38,8 +35,12 @@ public class MeasurementService {
         measurementRepository.save(measurement);
     }
 
+    public long getRainyDaysCount() {
+        return measurementRepository.findAll().stream().filter(Measurement::isRaining).count();
+    }
+
     private void enrichMeasurement(Measurement measurement) {
-        measurement.setSensor(sensorService.findOne(measurement.getSensor().getName()));
+        measurement.setSensor(sensorService.findOne(measurement.getSensor().getName()).get());
         measurement.setAddedAt(LocalDateTime.now());
     }
 }

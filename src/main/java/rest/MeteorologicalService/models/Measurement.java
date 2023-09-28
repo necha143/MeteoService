@@ -31,7 +31,7 @@ public class Measurement {
 
     @ManyToOne
     @JoinColumn(name = "sensor_name", referencedColumnName = "name")
-    @NotEmpty(message = "Поле 'sensor' не должно быть пустым")
+    @NotNull(message = "Поле 'sensor' не должно быть пустым")
     private Sensor sensor;
 
     public Measurement() {
