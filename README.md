@@ -57,4 +57,4 @@ __start client + /measurements__
 * Hibernate validator
 * ModelMapper
 * PostgreSQL
-* Tomcat(9.0.80)
+* Tomcat
