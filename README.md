@@ -19,32 +19,32 @@
 
 ## Http-запросы
 __/sensor__    
-![sensor](https://github.com/necha143/MeteoService/assets/113212609/4160cc7c-99db-469c-a761-fe0a5fcc2e76)
+![sensor](https://github.com/necha143/MeteoService/assets/113212609/37bf8206-7e3e-43e6-a68e-0fcfc8ad30d6)
 
 </br></br>
 __/sensor/{id}__   
-![sensorID](https://github.com/necha143/MeteoService/assets/113212609/35cff83a-d8e8-4c68-bf11-42fb110104da)
+![sensorID](https://github.com/necha143/MeteoService/assets/113212609/3474daed-221d-4e63-8808-a151324044c4)
 
 </br></br>
 __/sensor/registration__   
-![sensorReg](https://github.com/necha143/MeteoService/assets/113212609/bdeaeda1-257a-4f90-8a3a-154eff6992da)
+![sensorReg](https://github.com/necha143/MeteoService/assets/113212609/7d5e9f8e-5168-4a54-b366-733b86ce2469)
 
 </br></br>
 __/measurements__   
-![meas](https://github.com/necha143/MeteoService/assets/113212609/92917f98-a821-4819-b369-00a28365746c)
+![meas](https://github.com/necha143/MeteoService/assets/113212609/82930224-5772-442a-b2e2-3bc5e3bc615f)
 
 </br></br>
 __/measurements/rainyDaysCount__   
-![measRain](https://github.com/necha143/MeteoService/assets/113212609/d5d0a285-a825-419f-a70d-6df7cb148db5)
+![measRain](https://github.com/necha143/MeteoService/assets/113212609/2b4ea791-6f7e-49c8-b2dd-744f48a4067c)
 
 </br></br>
 __/measurements/add__   
-![measAdd](https://github.com/necha143/MeteoService/assets/113212609/490d2e9a-8277-4cd6-82fe-9f4d2ed2f5f4)
+![measAdd](https://github.com/necha143/MeteoService/assets/113212609/f1bec538-7f3e-45a4-ba6b-010755a0d053)
 
 </br></br>
 __start client + /measurements__   
-![client](https://github.com/necha143/MeteoService/assets/113212609/f04751f7-d8c7-4841-b2f2-3c567ff3dacf)
-![clientSucc](https://github.com/necha143/MeteoService/assets/113212609/7640ce21-522c-4630-9857-2d097b5f1e03)
+![client](https://github.com/necha143/MeteoService/assets/113212609/4856e37c-788c-42af-88d1-d9bb81b9d28f)
+![clientSucc](https://github.com/necha143/MeteoService/assets/113212609/c1513e8a-07f4-4773-b09c-83def5482db3)
 
 ## Используемые технологии 
 * Java(JDK 17)
