@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-measurement
+      author: necha
+      changes:
+        - createTable:
+            tableName: measurement
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: value
+                  type: double(400)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: raining
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_time
+                  type: date
+              - column:
+                  name: sensor_name
+                  type: varchar(100)
+                  constraints:
+                    foreignKeyName: sensor_name_fk
+                    referencedTableName: sensor
+                    referencedColumnNames: name

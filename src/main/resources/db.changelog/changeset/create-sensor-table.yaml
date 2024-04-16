@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-sensor
+      author: necha
+      changes:
+        - createTable: 
+            tableName: sensor
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+                    unique: true

@@ -13,7 +13,7 @@ public class Measurement {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "value")
     @NotNull(message = "Величина температуры не должна быть пустой")
