@@ -45,6 +45,7 @@ __/measurements/add__
 </br></br>
 __start client + /measurements__   
 ![client](https://github.com/necha143/MeteoService/assets/113212609/4856e37c-788c-42af-88d1-d9bb81b9d28f)
+</br>
 ![clientSucc](https://github.com/necha143/MeteoService/assets/113212609/c1513e8a-07f4-4773-b09c-83def5482db3)
 </br></br>
 
@@ -54,6 +55,7 @@ __Удачное выполнение файлов миграции__
 </br></br>
 
 __Созданные таблицы__
+</br>
 <img width="487" alt="db" src="https://github.com/necha143/MeteoService/assets/113212609/8cc5aa16-2c10-4d58-aa3c-8458f45dba40">
 </br></br>
 
