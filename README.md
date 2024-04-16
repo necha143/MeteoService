@@ -4,6 +4,7 @@
 * [Главная задача](#главная-задача)
 * [Добавленный функционал web-приложения](#функционал)
 * [Запросы приложения](#http-запросы)
+* [Liquibase](#liquibase)
 * [Используемые технологии](#используемые-технологии)
 
 ## Главная задача
@@ -44,7 +45,25 @@ __/measurements/add__
 </br></br>
 __start client + /measurements__   
 ![client](https://github.com/necha143/MeteoService/assets/113212609/4856e37c-788c-42af-88d1-d9bb81b9d28f)
+</br>
 ![clientSucc](https://github.com/necha143/MeteoService/assets/113212609/c1513e8a-07f4-4773-b09c-83def5482db3)
+</br></br>
+
+## Liquibase
+__Удачное выполнение файлов миграции__
+<img width="1338" alt="infos" src="https://github.com/necha143/MeteoService/assets/113212609/36b33440-fba3-42aa-bff3-01eb32b96b3c">
+</br></br>
+
+__Созданные таблицы__
+</br>
+<img width="487" alt="db" src="https://github.com/necha143/MeteoService/assets/113212609/8cc5aa16-2c10-4d58-aa3c-8458f45dba40">
+</br></br>
+
+[ChangeSets](https://github.com/necha143/MeteoService/tree/master/src/main/resources/db.changelog/changeset)
+</br>
+[ChangeLog-Master](https://github.com/necha143/MeteoService/blob/master/src/main/resources/db.changelog/db.changelog-master.yaml)
+</br>
+
 
 ## Используемые технологии 
 * Java(JDK 17)
