@@ -5,6 +5,7 @@
 * [Добавленный функционал web-приложения](#функционал)
 * [Запросы приложения](#http-запросы)
 * [Liquibase](#liquibase)
+* [Docker](#docker)
 * [Используемые технологии](#используемые-технологии)
 
 ## Главная задача
@@ -64,6 +65,14 @@ __Созданные таблицы__
 [ChangeLog-Master](https://github.com/necha143/MeteoService/blob/master/src/main/resources/db.changelog/db.changelog-master.yaml)
 </br>
 
+## Docker
+__Файлы конфигурации__
+<br/>
+<br/>
+[Dockerfile](https://github.com/necha143/MeteoService/blob/master/docker/Dockerfile)
+<br/>
+[docker-compose](https://github.com/necha143/MeteoService/blob/master/docker/docker-compose.yml)
+<br/>
 
 ## Используемые технологии 
 * Java(JDK 17)
@@ -71,9 +80,10 @@ __Созданные таблицы__
 * Hibernate
 * Spring Data JPA
 * Spring REST API
+* Liquibase
+* Docker
 * Maven
-* Thymeleaf
-* Hibernate validator
+* Hibernate Validator
 * ModelMapper
 * PostgreSQL
 * Tomcat
