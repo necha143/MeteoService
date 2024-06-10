@@ -9,8 +9,6 @@
     </parent>
     
     <artifactId>App</artifactId>
-    <name>Archetype - App</name>
-    <url>http://maven.apache.org</url>
     
     <dependencies>
         
@@ -19,6 +17,20 @@
             <artifactId>Data</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.1.1</version>
+        </dependency>
         
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

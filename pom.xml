@@ -7,13 +7,15 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.1.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	
 	<groupId>rest</groupId>
 	<artifactId>MeteoService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<packaging>pom</packaging>
+	
 	<name>MeteorologicalService</name>
 	<description>Demo project for Spring Boot</description>
 	
@@ -26,6 +28,16 @@
 		<java.version>17</java.version>
 		<start-class>rest.MeteorologicalService.MeteorologicalServiceApplication</start-class>
 	</properties>
+	
+	<!--<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>rest</groupId>
+				<artifactId>Data</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>-->
 	
 	<dependencies>
 		
@@ -58,16 +70,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>3.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-core</artifactId>
-			<version>4.24.0</version>
 		</dependency>
 		
 	</dependencies>
